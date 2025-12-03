@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat, vélemények</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Barcelona.css">
+    <script src="./Barcelona.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./sagrada-familia.ico">
+</head>
+<body>
+    <header>
+        <h1>Kapcsolat, vélemények</h1>
+        <nav id="bevezetes">
+            <section class="box">
+                <img class="ikon" src="./ikonok/iconmonstr-eye-lined-240.png">
+                <h2 class="box_header"><a href="./fooldal.html">Fedezd fel Barcelonát!</a></h2>
+            </section>
+            <section class="box">
+                <img class="ikon" src="./ikonok/iconmonstr-building-46-240.png">
+                <h2 class="box_header"><a href="./fobb_latnivalok.html">Főbb látnivalók</a></h2>
+            </section>
+            <section class="box">
+                <img class="ikon" src="./ikonok/iconmonstr-eat-5-thin-240.png">
+                <h2 class="box_header"><a href="./gasztronomia.html">Gasztronómia</a></h2>
+            </section>
+            <section class="box">
+                <img class="ikon" src="./ikonok/iconmonstr-airport-15-240.png">
+                <h2 class="box_header"><a href="./utazasi_tippek.html">Utazási tippek</a></h2>
+            </section>
+            <section class="box">
+                <img class="ikon" src="./ikonok/iconmonstr-magnifier-lined-240.png">
+                <h2 class="box_header"><a href="./kviz.html">Barcelona KVÍZ</a></h2>
+            </section>
+            <section class="box">
+                <img class="ikon" src="./ikonok/iconmonstr-email-8-240.png">
+                <h2 class="box_header"><a href="./kapcsolat_velemenyek.html">Kapcsolat, vélemények</a></h2>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section id="kapcsolat">
+            <h3>Vedd fel velünk a kapcsolatot! </h3>
+            <form id="kapcsolatForm">
+                <div>
+                    <label for="nev">Név: </label>
+                    <input type="text" id="nev" name="nev" placeholder="Add meg a neved">
+                    <div id="error-nev" class="error-msg"></div>
+                </div>
+                
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="pl. pelda@email.com">
+                    <div id="error-email" class="error-msg"></div>
+                </div>
+
+                <div>
+                    <label for="telefon">Telefonszám:</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="Ebben formátumban add meg: 06301234567">
+                    <div id="error-telefon" class="error-msg"></div>
+                </div>
+                           
+                <div>
+                    <label for="eletkor">Életkor:</label>
+                    <input type="number" id="eletkor" name="eletkor" placeholder="Írd be az életkorod">
+                    <div id="error-kor" class="error-msg"></div>
+                </div>
+                
+                <div>
+                    <label for="szuletesi_datum">Születési dátum:</label>
+                    <input type="date" id="szuletesiDatum" name="szuletesi_datum">
+                    <div id="error-datum" class="error-msg"></div>
+                </div>          
+
+                <div>
+                    <label for="uzenet">Üzenet:</label>
+                    <textarea id="uzenet" name="uzenet" placeholder="Írd ide az üzeneted"></textarea>
+                    <div id="error-uzenet" class="error-msg"></div>
+                </div>
+                
+                <label for="feliratkozas">
+                    <input type="checkbox" id="feliratkozas" name="feliratkozas">
+                    Feliratkozom a hírlevélre
+                </label>
+                
+                <button class="kapcsolat_gomb" type="submit">Küldés</button>
+            </form>
+        </section>
+
+        <section id="velemeny">
+            <h3>Oszd meg velünk véleményed, tapasztalatod, javaslatod!</h3>
+            <form id="velemeny-form">
+                <label for="velemeny">Vélemény:</label>
+                <textarea id="velemeny_szoveg" name="velemeny" placeholder="Oszd meg velünk véleményed"></textarea>
+
+                <button class="kapcsolat_gomb" type="submit">Küldés</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>&copy; 2025 Barcelona</footer>
+</body>
+</html>
